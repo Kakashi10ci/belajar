@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/huruf3"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Guideline Vertikal -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Guideline Horizontal -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- ================= BARIS 1 ================= -->
+
+    <Button
+        android:id="@+id/btnS"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="S"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F5E6A7"
+        app:layout_constraintStart_toStartOf="@id/g1"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <Button
+        android:id="@+id/btnT"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="T"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F3C4E8"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <Button
+        android:id="@+id/btnU"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="U"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D6C6F8"
+        app:layout_constraintStart_toStartOf="@id/g3"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <!-- ================= BARIS 2 ================= -->
+
+    <Button
+        android:id="@+id/btnV"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="V"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D6C6F8"
+        app:layout_constraintStart_toStartOf="@id/g1"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <Button
+        android:id="@+id/btnW"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="W"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#BFD8F5"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <Button
+        android:id="@+id/btnX"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="X"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F3C4E8"
+        app:layout_constraintStart_toStartOf="@id/g3"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <!-- ================= BARIS 3 ================= -->
+
+    <Button
+        android:id="@+id/btnY"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="Y"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#BFD8F5"
+        app:layout_constraintStart_toStartOf="@id/g1"
+        app:layout_constraintTop_toTopOf="@id/h3"/>
+
+    <Button
+        android:id="@+id/btnZ"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:text="Z"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F5E6A7"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toTopOf="@id/h3"/>
+
+    <!-- Tombol Kembali -->
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="KEMBALI"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFB74D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSelanjutnya"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Tombol Selanjutnya -->
+
+    <Button
+        android:id="@+id/btnSelanjutnya"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="SELANJUTNYA"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        app:layout_constraintStart_toEndOf="@id/btnKembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

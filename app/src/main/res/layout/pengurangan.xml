@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/pengurangan"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ================= GUIDELINE ================= -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.56"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"/>
+
+    <!-- ================= BARIS 1 ================= -->
+
+    <Button
+        android:id="@+id/btnKurang1"
+        android:layout_width="130dp"
+        android:layout_height="72dp"
+        android:text="3 - 2 = 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F06292"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/hTop"/>
+
+    <Button
+        android:id="@+id/btnKurang2"
+        android:layout_width="130dp"
+        android:layout_height="72dp"
+        android:text="4 - 2 = 2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4FC3F7"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/hTop"/>
+
+    <!-- ================= BARIS 2 ================= -->
+
+    <Button
+        android:id="@+id/btnKurang3"
+        android:layout_width="130dp"
+        android:layout_height="72dp"
+        android:text="5 - 3 = 2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#81C784"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/hMiddle"/>
+
+    <Button
+        android:id="@+id/btnKurang4"
+        android:layout_width="130dp"
+        android:layout_height="72dp"
+        android:text="6 - 2 = 4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#9575CD"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/hMiddle"/>
+
+    <!-- ================= BARIS 3 ================= -->
+
+    <Button
+        android:id="@+id/btnKurang5"
+        android:layout_width="130dp"
+        android:layout_height="72dp"
+        android:text="7 - 2 = 5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFB74D"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/hBottom"/>
+
+    <Button
+        android:id="@+id/btnKurang6"
+        android:layout_width="130dp"
+        android:layout_height="72dp"
+        android:text="8 - 2 = 6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4DB6AC"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/hBottom"/>
+
+    <!-- ================= TOMBOL BAWAH ================= -->
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="KEMBALI"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFB74D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSelanjutnya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/btnSelanjutnya"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="SELANJUTNYA"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        app:layout_constraintStart_toEndOf="@id/btnKembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

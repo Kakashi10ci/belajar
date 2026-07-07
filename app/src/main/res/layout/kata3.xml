@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/sukukata3"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ================= Guideline ================= -->
+
+    <!-- Kolom -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.14"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.62"/>
+
+    <!-- Baris -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74"/>
+
+    <!-- ================= BARIS 1 ================= -->
+
+    <Button
+        android:id="@+id/btnBuku"
+        android:layout_width="145dp"
+        android:layout_height="68dp"
+        android:text="BUKU"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#EF5350"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <Button
+        android:id="@+id/btnPensil"
+        android:layout_width="145dp"
+        android:layout_height="68dp"
+        android:text="PENSIL"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#42A5F5"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <!-- ================= BARIS 2 ================= -->
+
+    <Button
+        android:id="@+id/btnPensilwarna"
+        android:layout_width="145dp"
+        android:layout_height="72dp"
+        android:text="PENSIL WARNA"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFB74D"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <Button
+        android:id="@+id/btnPenghapus"
+        android:layout_width="170dp"
+        android:layout_height="72dp"
+        android:text="PENGHAPUS"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#AB47BC"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <!-- ================= BARIS 3 ================= -->
+
+    <Button
+        android:id="@+id/btnPenggaris"
+        android:layout_width="150dp"
+        android:layout_height="68dp"
+        android:text="PENGGARIS"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/h3"/>
+
+    <Button
+        android:id="@+id/btnGunting"
+        android:layout_width="145dp"
+        android:layout_height="68dp"
+        android:text="GUNTING"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#26A69A"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/h3"/>
+
+    <!-- ================= Tombol Bawah ================= -->
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="KEMBALI"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFB74D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSelanjutnya"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btnSelanjutnya"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="SELANJUTNYA"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        app:layout_constraintStart_toEndOf="@id/btnKembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

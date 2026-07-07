@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/penambahan2"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ================= Guideline ================= -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.56"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"/>
+
+    <!-- ================= BARIS 1 ================= -->
+
+    <Button
+        android:id="@+id/btnTambah7"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:text="2 + 3 = 5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E57373"
+        app:layout_constraintStart_toStartOf="@id/g1"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <Button
+        android:id="@+id/btnTambah8"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:text="3 + 1 = 4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#64B5F6"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <!-- ================= BARIS 2 ================= -->
+
+    <Button
+        android:id="@+id/btnTambah9"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:text="6 + 3 = 9"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#81C784"
+        app:layout_constraintStart_toStartOf="@id/g1"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <Button
+        android:id="@+id/btnTambah10"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:text="5 + 3 = 8"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#BA68C8"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <!-- ================= BARIS 3 ================= -->
+
+    <Button
+        android:id="@+id/btnTambah11"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:text="3 + 4 = 7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFB74D"
+        app:layout_constraintStart_toStartOf="@id/g1"
+        app:layout_constraintTop_toTopOf="@id/h3"/>
+
+    <Button
+        android:id="@+id/btnTambah12"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:text="4 + 2 = 6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4DB6AC"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toTopOf="@id/h3"/>
+
+    <!-- ================= Tombol Bawah ================= -->
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="KEMBALI"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFB74D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSelanjutnya"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btnSelanjutnya"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="SELANJUTNYA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        app:layout_constraintStart_toEndOf="@id/btnKembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

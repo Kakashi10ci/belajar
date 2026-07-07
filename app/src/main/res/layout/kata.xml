@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/sukukata"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Guideline Vertikal -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gLeft"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gRight"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Guideline Horizontal -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- ================= BARIS 1 ================= -->
+
+    <Button
+        android:id="@+id/btnMAMA"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:text="MAMA"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F5A9B8"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <Button
+        android:id="@+id/btnPAPA"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:text="PAPA"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#A5D6A7"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/h1"/>
+
+    <!-- ================= BARIS 2 ================= -->
+
+    <Button
+        android:id="@+id/btnNenek"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:text="NENEK"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#90CAF9"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <Button
+        android:id="@+id/btnKakek"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:text="KAKEK"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#CE93D8"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/h2"/>
+
+    <!-- ================= BARIS 3 ================= -->
+
+    <Button
+        android:id="@+id/btnAdik"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:text="ADIK"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFCC80"
+        app:layout_constraintStart_toStartOf="@id/gLeft"
+        app:layout_constraintTop_toTopOf="@id/h3"/>
+
+    <Button
+        android:id="@+id/btnKakak"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:text="KAKAK"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#80CBC4"
+        app:layout_constraintStart_toStartOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="@id/h3"/>
+
+    <!-- ================= Tombol Bawah ================= -->
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="KEMBALI"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFB74D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSelanjutnya"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btnSelanjutnya"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="SELANJUTNYA"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        app:layout_constraintStart_toEndOf="@id/btnKembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
